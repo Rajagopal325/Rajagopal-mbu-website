@@ -36,4 +36,4 @@ window.addEventListener("scroll",function(){
 });
 }
 
-navbar();
+// navbar();
