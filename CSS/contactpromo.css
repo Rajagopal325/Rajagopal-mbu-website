@@ -1,0 +1,56 @@
+/* Contact promotion styles */
+.contact-promotion {
+    width: 100%;
+}
+.contact-promotion .contact-promo-img{
+    position: relative;
+    aspect-ratio: 355/400;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+.contact-promotion .contact-promo-img::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--clr-black-80);
+
+}
+.contact-promotion .contact-promo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.contact-info-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact-promotion .contact-info-container .contact-heading{
+    font-size: 30px;
+    color: var(--clr-white);
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 992px){
+    .contact-promotion .contact-promo-img{
+        aspect-ratio: 1259/437;
+    }
+    .contact-promotion .contact-info-container .contact-heading{
+        font-size: 44px;
+    }
+}
+
+

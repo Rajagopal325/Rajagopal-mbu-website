@@ -1,0 +1,17 @@
+.our-campuses-container{
+    width: 100%;
+}
+.our-campuses-container .each-campus .img-container{
+    width: 100%;
+    aspect-ratio: 355/250;
+    overflow: hidden;
+    border-radius: var(--radius);
+
+}
+.our-campuses-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 4px solid var(--clr-blue);
+}

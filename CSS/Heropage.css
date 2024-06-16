@@ -1,0 +1,116 @@
+/* Hero page container */
+.page-hero-container{
+    width: 100%;
+}
+.page-hero-container .hero-img-component{
+    aspect-ratio: 375/220;
+    overflow: hidden;
+}
+.page-hero-container .img-container, .page-hero-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-hero-container .hero-box{
+    width: 100%;
+    background: var(--clr-primary);
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-hero-container .hero-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.page-hero-container .heading{
+    color: var(--clr-white);
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.page-hero-container .heading:hover{
+    color: rgb(189, 31, 31);
+    background-color: yellow;
+}
+.page-hero-container .welcome-heading{
+    color: var(--clr-white);
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.page-hero-container .desc{
+    color: var(--clr-white);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.page-hero-container .desc:hover, .welcome-heading:hover{
+    color: rgb(135, 176, 222);
+}
+.page-hero-container .small-heading{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--clr-white);
+    font-weight: bold;
+}
+.page-hero-container .small-heading:hover{
+    color: rgb(135, 176, 222);
+}
+
+@media screen  and (min-width: 992px){
+    .page-hero-container{
+        position: relative;
+    }
+    .page-hero-container .hero-img-component{
+        aspect-ratio: 1922/700;
+        position:relative;
+    }
+    .home-page.page-hero-container .hero-img-component{
+        aspect-ratio: 1920/1080;
+    }
+    .page-hero-container .hero-img-component::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: var(--clr-black-80);
+    }
+    .page-hero-container .hero-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background: transparent;
+    }
+    .page-hero-container .heading{
+        font-size: 64px;
+
+    }
+    .page-hero-container .welcome-heading{
+        font-size:30px ;
+    }
+    .page-hero-container .small-heading{
+        font-size: 34px;
+    }
+    .page-hero-container .home-button{
+        animation: bounceAnimation 3s linear infinite alternate;
+    }
+
+}
+@keyframes bounceAnimation {
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
