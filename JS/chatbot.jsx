@@ -2,6 +2,7 @@ const sendChatBtn = document.querySelector(".chat-input span");
 const chatInput = document.querySelector(".chat-input textarea");
 const chatbox = document.querySelector(".chatbox");
 const chatbotToggler = document.querySelector(".chatbot-toggle");
+const onloadToggle = document.querySelector(".onload-toggle");
 const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;  
