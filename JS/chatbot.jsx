@@ -100,6 +100,6 @@ chatbotCloseBtn.addEventListener("click", () => document.body.classList.remove("
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 sendChatBtn.addEventListener("click", handleChat);
 
-onloadToggle.addEventListener("load", (event1) =>document.body.classList.toggle("show-chatbot"));
+onloadToggle.addEventListener("load", (event1) =>document.body.classList.add("show-chatbot"));
 onload = (event1) => document.body.classList.toggle("show-chatbot");
 
