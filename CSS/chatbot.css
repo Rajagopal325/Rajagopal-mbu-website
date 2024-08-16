@@ -73,6 +73,12 @@ body {
   transition: all 0.3s ease;
 }
 
+
+.onload-toggle{
+  transition: all 3s ease;
+}
+
+
 .show-chatbot .chatbot{
   transform: scale(1);
   opacity: 1;
