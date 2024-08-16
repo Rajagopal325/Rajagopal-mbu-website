@@ -97,7 +97,9 @@ chatInput.addEventListener("keydown", (e) => {
 });
 
 chatbotCloseBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
-onloadToggle.addEventListener("load", (event1) =>document.body.classList.toggle("show-chatbot"));
-onload = (event1) => document.body.classList.toggle("show-chatbot");
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 sendChatBtn.addEventListener("click", handleChat);
+
+onloadToggle.addEventListener("load", (event1) =>document.body.classList.toggle("show-chatbot"));
+onload = (event1) => document.body.classList.toggle("show-chatbot");
+
