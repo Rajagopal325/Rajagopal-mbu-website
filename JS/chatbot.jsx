@@ -8,7 +8,7 @@ const chatbotCloseBtn = document.querySelector(".close-btn");
 let userMessage;  
 const inputInitHeight = chatInput.scrollHeight;
 const API_KEY =
-  "1c3ce17a91cb4f07b076219e2a734006"; //1c3ce17a91cb4f07b076219e2a734006
+  "AIzaSyCKZ3CMROXXQUpWDoH6dSR3fRzfRU99Ytk"; //1c3ce17a91cb4f07b076219e2a734006
 //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
 //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
 //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
@@ -28,7 +28,7 @@ const createChatLi = (message, classname) => {
 };
 
 const generateResponse = (incomingChatLi) => {
-  const API_URL = "https://api.aimlapi.com/v1/chat/completions"; //https://api.openai.com/v1/chat/completions
+  const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"; //https://api.openai.com/v1/chat/completions
   const messageElement = incomingChatLi.querySelector("p");
   const personal = incomingChatLi.querySelector("p");
 
@@ -102,4 +102,5 @@ sendChatBtn.addEventListener("click", handleChat);
 
 onloadToggle.addEventListener("load", (event1) =>document.body.classList.add("show-chatbot"));
 onload = (event1) => document.body.classList.toggle("show-chatbot");
+
 
