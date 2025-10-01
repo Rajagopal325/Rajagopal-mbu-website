@@ -21,10 +21,7 @@ function init() {
 
 init();
 
-//open chatbot automatically on refresh
-window.addEventListener("load", () => {
-  document.body.classList.add("show-chatbot");
-});
+
 
 function navbar(){
     const navbarContainer =document.querySelector(".nav-container");
