@@ -10,9 +10,9 @@ const inputInitHeight = chatInput.scrollHeight;
 
 
 // Auto open chatbot on page load
-window.addEventListener("load", () => {
-  document.body.classList.add("show-chatbot");
-});
+// window.addEventListener("load", () => {
+//   document.body.classList.add("show-chatbot");
+// });
 
 // Your Google API Key
 const API_KEY = "AIzaSyCKZ3CMROXXQUpWDoH6dSR3fRzfRU99Ytk"; // 🔑 Replace with your Gemini API key
@@ -121,4 +121,5 @@ chatbotToggler.addEventListener("click", () =>
   document.body.classList.toggle("show-chatbot")
 );
 sendChatBtn.addEventListener("click", handleChat);
+
 
